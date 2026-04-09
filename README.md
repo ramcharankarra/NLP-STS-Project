@@ -34,6 +34,34 @@ The implementation includes preprocessing, feature extraction, similarity comput
 ## Code
 The project is implemented in Python using libraries such as pandas, scikit-learn, sentence-transformers, and matplotlib. The main steps include loading the dataset, preprocessing text, computing similarity using TF-IDF and BERT, and evaluating performance using Pearson correlation.
 
+## How to Run
+Follow these steps to run the project on your local machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/ramcharankarra/NLP-STS-Project.git
+   cd NLP-STS-Project
+   ```
+
+2. **Create a virtual environment (Optional but Recommended):**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   ```
+
+3. **Install dependencies:**
+   Ensure all required libraries are installed by running:
+   ```bash
+   pip3 install -r requirements.txt
+   ```
+
+4. **Run the Project:**
+   Execute the main Python script to generate scores and visualizations:
+   ```bash
+   python3 sts_project.py
+   ```
+   *Note: Once the final graph visualizing the metrics pops up, simply close the window to trigger the live Interactive Console where you can input and test custom sentences!*
+
 ## Results and Analysis
 The performance is evaluated using Pearson correlation.
 
