@@ -97,4 +97,20 @@ plt.ylabel("Pearson Correlation")
 plt.savefig("results/graph.png")
 plt.show()
 
-print("\nProject completed successfully!")
+print("\nProject evaluation completed successfully!")
+
+# -----------------------------
+# 9. INTERACTIVE DEMO (LIVE INPUT)
+# -----------------------------
+print("\n--- Try it yourself! ---")
+sentence1 = input("Enter first sentence: ")
+sentence2 = input("Enter second sentence: ")
+
+# Calculate live scores
+live_tfidf = tfidf_similarity(sentence1, sentence2)
+live_bert = bert_similarity(sentence1, sentence2)
+live_hybrid = 0.3 * live_tfidf + 0.7 * live_bert
+
+print(f"\nLive TF-IDF Score : {live_tfidf:.4f}")
+print(f"Live BERT Score   : {live_bert:.4f}")
+print(f"Live Hybrid Score : {live_hybrid:.4f}")
